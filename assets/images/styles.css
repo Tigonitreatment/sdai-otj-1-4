@@ -1,0 +1,80 @@
+body {
+    background-color: #e9e2d0; /* Light beige color for a warm contrast */
+    font-family: 'Arial', sans-serif;
+    color: #3d2b1f; /* Dark brown for primary text */
+}
+
+.menu-description {
+    font-size: 16px;
+    color: #3d2b1f; /* Dark brown color */
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.menu-title {
+    width: 800px;
+    margin: 0 auto; /* Centers the title */
+    text-align: center;
+    color: #3d2b1f; /* Dark brown color */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Georgia', serif; /* Classic and elegant */
+    color: #3d2b1f; /* Dark brown color */
+    margin: 20px 0; /* Margin for spacing */
+    padding-bottom: 5px; /* Adds spacing under the header */
+    border-bottom: 2px solid #a67c52; /* Subtle underline effect */
+    text-transform: uppercase; /* Makes headers more prominent */
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 75%;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-extra-image, .about-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3d2b1f;
+    font-weight: bold;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
