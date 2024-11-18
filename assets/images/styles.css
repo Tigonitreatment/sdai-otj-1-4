@@ -1,80 +1,36 @@
-body {
-    background-color: #e9e2d0; /* Light beige color for a warm contrast */
-    font-family: 'Arial', sans-serif;
-    color: #3d2b1f; /* Dark brown for primary text */
-}
-
-.menu-description {
-    font-size: 16px;
-    color: #3d2b1f; /* Dark brown color */
-    line-height: 1.8;
-    margin-bottom: 10px;
-}
-
-.menu-title {
-    width: 800px;
-    margin: 0 auto; /* Centers the title */
+/* General Footer Styling */
+.footer {
+    background-color: #3d2b1f; /* Dark brown background */
+    color: #fefae0; /* Light beige text color */
+    padding: 20px;
     text-align: center;
-    color: #3d2b1f; /* Dark brown color */
+    font-family: 'Arial', sans-serif;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Georgia', serif; /* Classic and elegant */
-    color: #3d2b1f; /* Dark brown color */
-    margin: 20px 0; /* Margin for spacing */
-    padding-bottom: 5px; /* Adds spacing under the header */
-    border-bottom: 2px solid #a67c52; /* Subtle underline effect */
-    text-transform: uppercase; /* Makes headers more prominent */
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 34px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-h4 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.logo {
-    width: 75%;
-    height: 100px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
-.about-extra-image, .about-image {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-}
-
-.navbar ul {
-    list-style: none;
+/* Flexbox and Inline-Block for Centered Icons */
+.footer-content {
     display: flex;
-    justify-content: space-around;
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #3d2b1f;
-    font-weight: bold;
+.social-icons {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center icons horizontally */
+    gap: 20px; /* Space between icons */
+    margin-top: 10px;
 }
 
-.hero-section img {
-    width: 100%;
-    height: auto;
+.social-icons a {
+    display: inline-block; /* Inline-block for each icon */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.icon {
+    width: 24px; /* Set width for icons */
+    height: 24px; /* Set height for icons */
 }
