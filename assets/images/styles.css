@@ -1,22 +1,176 @@
-/* General Footer Styling */
-.footer {
-    background-color: #3d2b1f; /* Dark brown background */
-    color: #fefae0; /* Light beige text color */
-    padding: 20px;
-    text-align: center;
+/* General Styling */
+body {
+    background-color: #e9e2d0; /* Light beige color for warm contrast */
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3d2b1f; /* Dark brown color */
 }
 
-/* Flexbox and Inline-Block for Centered Icons */
+h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    color: #3d2b1f;
+    text-transform: uppercase;
+    border-bottom: 2px solid #a67c52;
+    padding-bottom: 5px;
+    margin: 20px 0;
+}
+
+h1 { font-size: 40px; font-weight: bold; }
+h2 { font-size: 34px; font-weight: bold; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+
+/* Header Styling */
+header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img.logo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fefae0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 60px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+/* Navigation Styling */
+.navbar {
+    background-color: #a67c52;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #fefae0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styling */
+.hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* About Us Section */
+.section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    margin-top: 20px;
+}
+
+/* Developer's Favorites Section */
+#dev-favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#dev-favorites h2 {
+    font-size: 34px;
+    margin: 20px 0;
+}
+
+#dev-favorites p {
+    font-size: 18px;
+    color: #5c4432;
+    margin: 15px 0;
+    max-width: 700px;
+}
+
+#dev-favorites img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Location and Hours Sections */
+#location, #hours {
+    text-align: center;
+}
+
+#location p, #hours ul {
+    font-size: 18px;
+    color: #5c4432;
+}
+
+#hours ul {
+    list-style: none;
+    padding: 0;
+}
+
+#hours li {
+    margin: 8px 0;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #3d2b1f; /* Dark brown color */
+    color: #fefae0; /* Light beige color */
+    padding: 20px;
+    text-align: center;
+}
+
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.footer p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Social Icons Styling */
 .social-icons {
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center icons horizontally */
+    display: flex;
+    justify-content: center;
     gap: 20px; /* Space between icons */
     margin-top: 10px;
 }
@@ -31,6 +185,25 @@
 }
 
 .icon {
-    width: 24px; /* Set width for icons */
-    height: 24px; /* Set height for icons */
+    width: 40px; /* Set width for icons */
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Flexbox Additions */
+#menu, #location, #hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu .menu-title, #location h2, #hours h2 {
+    align-self: center;
+}
+
+#dev-favorites img {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 10px;
 }
